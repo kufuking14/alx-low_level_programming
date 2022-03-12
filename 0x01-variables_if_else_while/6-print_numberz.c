@@ -1,12 +1,23 @@
 #include <stdio.h>
-
+/**
+ * main - main block
+ * Description: prints all single digit numbers of base 10
+ * starting from 0, followed by a new line.
+ * Return: 0
+ */
 int main(void)
 {
-    
-	for (int i = 0; i <= 9; i++)
+	int c = 0;
+
+	while (c < 10)
 	{
-		putchar(i + '0');
+		putchar(48 + c);
+		c++;
 	}
+
 	putchar('\n');
-	return 0;
+	return (0);
 }
+© 2022 GitHub, Inc.
+Terms
+[A[C[C[C[A[A[B[C[C[C[C[C[C[C[C[C[C[C[C[[A[C
