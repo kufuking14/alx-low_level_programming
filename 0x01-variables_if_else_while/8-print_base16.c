@@ -2,8 +2,8 @@
 /**
  *main - entry point
  *
- *return[D[D[D[D[R[C[C[C[C[C[C[C[D[D: Always 0 (success/correct)
- */[A[A[A[A[A[B[D[/[B[B[B[B[C[C
+ *return Always 0 (success/correct)
+ */
 int main(void)
 
 {
