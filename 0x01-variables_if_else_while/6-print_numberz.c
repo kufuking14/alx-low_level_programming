@@ -7,9 +7,9 @@
 int main(void)
 
 {
-int 1;
+int i;
 
-[A[A[C[C[C[C[i[C[D[D[D[D[D[D[B[Bfor (i = 48 ; i <= 57; i++)
+for (i = 48 ; i <= 57; i++)
 {
 putchar (i);
 }
