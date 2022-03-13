@@ -1,26 +1,25 @@
 #include <stdio.h>
 /**
- * main -entry point 
+ *main - entry point
  *
- *Return: Always 0 (sucsess/correct)
+ *return[D[D[D[D[R[C[C[C[C[C[C[C[D[D: Always 0 (success/correct)
+ */[A[A[A[A[A[B[D[/[B[B[B[B[C[C
 int main(void)
+
 {
-    char ch = 'a';
-    int i = 0;
-    
-	while (i < 16)
-	{
-		if (i < 10)
-		{
-			putchar(i + '0');
-		}
-		else
-		{
-		    putchar(ch);
-		    ch++;
-		}
-		i++;
-	}
-	putchar('\n');
-    return 0;
+char base_16;
+
+for (base_16 = 48; base_16 <= 57; base_16++)
+{putchar(base_16);
+}
+
+for  (base_16 = 97 ; base_16 <= 102; base_16++)
+{
+putchar(base_16);
+}
+
+putchar ('\n');
+
+return (0);
+
 }
