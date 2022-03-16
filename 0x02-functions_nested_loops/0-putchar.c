@@ -6,14 +6,14 @@
 **/
 int main(void)
 {
-  char kafss[] = "_putchar";
+char kafss[] = "_putchar";
 
-  int c;
+int c;
 
-  for (c = 0; c < 8; c++)
-  {
+for (c = 0; c < 8; c++)
+ {
     _putchar(kafss[c]);
-  }
-  _putchar('\n');
-  return (0);
+ }
+_putchar('\n');
+return (0);
 }
