@@ -4,7 +4,7 @@
 *
 **/
 void print
-[A[C[C[C[C[C[C[C[C[C[C_alphabet(void)
+_alphabet(void)
 {
 char c;
 
