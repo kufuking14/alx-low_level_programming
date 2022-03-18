@@ -21,7 +21,6 @@ for (i = 0; i < size ; i++)
 for (z = d; z > 0 ; z--)
 {
 
-[A[A[B[[A[C
 _putchar (' ');
 }
 
