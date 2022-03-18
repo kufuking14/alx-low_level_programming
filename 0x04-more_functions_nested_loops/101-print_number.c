@@ -1,44 +1,28 @@
 #include "main.h"
+#include <stdio.h>
+
 /**
-* print_tringle - print tringle
-* @size: print size
-* Return: Always 0.
-*/
-
-void print_tringle(int size)
-
+  * print_number - Prints an integer.
+  * @n: The integer to prints.
+  *
+  * Return: Nothing!
+  */
+void print_number(int n)
 {
+  unsigned int k = n;
 
-int i;
-int z;
-int d;
-int p;
+  if (n < 0)
+  {
+    n *= -1;
+    k = n;
+    _putchar('-');
+  }
 
-if (size > 0)
-d = size - 1;
-for (i = 0; i < size ; i++)
-{
-for (z = d; z > 0 ; z--)
-{
+  k /= 10;
 
-_putchar (' ');
-}
+  if (k != 0)
+    print_number(k);
 
-for (p = 0; p <= i; p++)
-{
-_putchar (35);
-}
+  _putchar((unsigned int) n % 10 + '0');
 
-d--;
-
-_putchar ('\n');
-
-}
-
-}
-
-else
-{
-_putchar ('\n');
-}
 }
