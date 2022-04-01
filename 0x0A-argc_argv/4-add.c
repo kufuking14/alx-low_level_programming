@@ -4,70 +4,34 @@
 #include <string.h>
 
 /**
- * check_num - check - string there are digit
- * @str: array str
+ * main - program that prints its name
  *
- * Return; Always 0 (Success)
+ * @argc: the variable for the number or arguments
+ * @argv: an array varible containing the program arguments
+ * Return: 0 is success
  */
-
-int check_num(char *str)
-
-{
-/*Declaring variables*/
-unsigned int count;
-
-count = 0;
-while (count < strlen(str)) /*count string*/
-
-{
-if (!isdigit(str[count])) /*check if str there are digit*/
-{
-return (0);
-}
-
-count++;
-}
-return (1);
-}
-
-/**
- * main - Print the name of the program
- * @argc: Count arguments
- * @argv: Arguments
- *
- * return: Always 0 (Success)
- */
-
 int main(int argc, char *argv[])
-
 {
+  int s, x = 0;
+  char *a;
+  int b;
 
-/*Declaring variables*/
-int count;
-int str_to_int;
-int sum = 0;
-
-count = 1;
-while (count < argc) /*Goes through the whole array*/
-{
-if(check_num(argv[count]))
-
-{
-str_to_int = atoi(argv[count]); /*ATOI --> convert string to int*/
-sum += str_to_int;
-}
-
-/*Condition if one of the number contains symbols that are not digits*/
-else
-{
-printf("Error\n");
-return (1);
-}
-
-count++;
-}
-
-printf("%d\n", sum); /*print sum*/
-
-return (0);
+  if (argc <= 2)
+  {
+    printf("0\n");
+    return (0);
+  }
+  for (s = 1; s < argc; s++)
+  {
+    a = argv[s];
+    for (b = 0; a[b] != '\0'; b++)
+      if (a[b] > '9' || a[b] < '0')
+      {
+        printf("Error\n");
+        return (1);
+      }
+    x += atoi(argv[s]);
+  }
+  printf("%d\n", x);
+  return (0);
 }
